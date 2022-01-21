@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link href="linkedscript/bootstrap340.min.css" rel="stylesheet" >
+    <link href="bootstrap-4.3.1-dist/css/bootstrap.min.css" rel="stylesheet"> 
+    <link href="bootstrap-4.3.1-dist/css/bootstrap.css" rel="stylesheet" type="text/css" >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration</title>
+        <style>
+        body{
+        background-image: url("images/tokohijab5.jpg");
+        background-size: 100%;
+        }
+        </style>
+    </head>
+<body>
+    <br><br>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 m-auto">
+                <div class="card mt-7">
+                    <div class="card-title">
+                        <h3 style="font-size: 25px" class="bg-info text-white text-center py-5"> Register User</h3>
+            </div>
+            <div class="card-body" style="background-color: #ADD8E6;">
+                <center>  
+                        <form method="POST" action="registry.php">
+                            <br><label style="font-size: 15px;">Username:</label>
+                            <input style="font-size: 12px" type="text" name="user_name" class="form-control" id="user_name" placeholder="Username" ><br>
+                            <label style="font-size: 15px;">Fullname:</label>
+                            <input style="font-size: 12px" type="text" name="name" class="form-control" id="name" placeholder="Full Name" ><br>
+                            <label style="font-size: 15px;">Password:</label>
+                            <input style="font-size: 12px" type="password" name="password" class="form-control" id="password" placeholder="Password" ><br>
+                            <label style="font-size: 15px;">Email:</label>
+                            <input style="font-size: 12px" type="text" name="user_email" class="form-control" id="user_email" placeholder="Email" ><br>
+                            <label style="font-size: 15px;">Number Phone:</label>
+                            <input style="font-size: 12px" type="text" name="user_phone" class="form-control" id="user_phone" placeholder="Phone Number" ><br>
+                            <label style="font-size: 15px;">Address:</label>
+                            <input style="font-size: 12px" type="text" name="user_address" class="form-control" id="user_address" placeholder="Address" ><br>
+                            <label style="font-size: 15px;">No. Rekening : </label>
+                            <input style="font-size: 12px" type="text" name="no_rekening" class="form-control" id="no_rekening" placeholder="No. Rekening" ><br>
+                            <label style="font-size: 15px;">Atas Nama Rekening (A.N) : </label>
+                            <input style="font-size: 12px" type="text" name="nama_rekening" class="form-control" id="nama_rekening" placeholder="Nama Rekening (A.N)" ><br>
+                            <p>
+                                <center>
+                                <div class="col-sm-0"></div>        
+                                <input style="font-size: 15px" class="btn btn-info" type="submit" name="registry" value="Add">
+                                </center>
+                            </p>
+        
+                            <p>
+                                <center>
+                                <a href="login.html" class="btn btn-info" style="font-size: 15px">Login Page</a></p>
+                                </center> 
+                            </p>
+                        </center>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+    <script type="text/javascript">
+    function validasi() {
+        var user_name = document.getElementById("user_name").value;
+        var password = document.getElementById("password").value;
+        if (user_name != "" && password!="") {
+            return true;
+        }else{
+            alert('You must fill Username and Password!');
+            return false;
+        }
+    }
+    </script>
+</html>

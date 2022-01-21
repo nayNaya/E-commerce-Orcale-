@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link href="linkedscript/bootstrap340.min.css" rel="stylesheet" >
+    <link href="bootstrap-4.3.1-dist/css/bootstrap.min.css" rel="stylesheet"> 
+    <link href="bootstrap-4.3.1-dist/css/bootstrap.css" rel="stylesheet" type="text/css" >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+        <style>
+        body{
+        background-image: url("images/tokohijab5.jpg");
+        background-size: 100%;
+        }
+        </style>
+    </head>
+
+<body>    
+    <center><p style="font-size: 100px" >HAYZA HIJABS</p></center>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 m-auto">
+                <div class="card mt-7">
+                    <div class="card-title">
+                    <h1 class="bg-info text-white text-center py-5"> LOGIN</h1>
+            </div>
+            <div class="card-body" style="background-color: #ADD8E6;">
+<center>
+    <form method="POST" action="login.php">
+        <div class="container">
+            <label style="font-size: 15px;">Username:</label><br>
+            <input style="font-size: 12px" type="text" name="user_name" class="form-control" id="user_name" placeholder="Username" ><br>
+            <label style="font-size: 15px;">Password:</label><br>
+            <input style="font-size: 12px" type="password" name="password" class="form-control" id="password" placeholder="Password" ><br>
+                <center>
+                    <input  style="font-size: 15px;" class="btn btn-info" type="submit" name="login" value="LOGIN">
+                </center>
+                <p>
+                    <br>
+                    <center>
+                    <p style="font-size: 15px;">Don't have account yet?</p>
+                    <a href="registry.html" style="font-size: 13px;" class="btn btn-info" >Registry Account</a>
+                    </center>
+                </p>
+        </div>
+    </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+    <script type="text/javascript">
+    function validasi() {
+        var user_name = document.getElementById("user_name").value;
+        var password = document.getElementById("password").value;
+        if (user_name != "" && password!="") {
+            return true;
+        }else{
+            alert('You must fill Username and Password!');
+            return false;
+        }
+    }
+    </script>
+</html>
